@@ -1,0 +1,73 @@
+:root {
+  --grid-size: 16;
+  --background-color: #101520;
+  --foreground-color: #fff;
+}
+body {
+  background-color: #101520;
+}
+
+h1 {
+  text-align: center;
+  color: var(--foreground-color);
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
+
+.grid-size-label {
+  color: var(--foreground-color);
+}
+
+#grid-size-slider {
+  width: 100%;
+  margin: 0px 5px;
+}
+
+#color-picker {
+  width: 10em;
+  height: 10em;
+  margin: 0px 5px;
+  align-self: center;
+}
+
+.content {
+  display: flex;
+  margin: 5% 10%;
+  flex: 1 1 auto;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  width: 40em;
+  height: 40em;
+  margin: 0px 20px;
+  background-color: #fff;
+  grid-template-columns: repeat(16, 1fr); /* 16 columns */
+  grid-template-rows: repeat(16, 1fr); /* 16 rows */
+  user-select: none;
+}
+
+.box {
+  background-color: #fff;
+}
+
+.button {
+  background-color: #007bff;
+  color: var(--foreground-color);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
